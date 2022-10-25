@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .background{
+            /* opacity: .8; */
+            /* background-image: linear-gradient(rgb(245, 220, 110), rgb(174, 134, 2)); */
+            padding: 5vw 0vw;
+            background-image: url(topbanner3.jpg); 
+            background-repeat: no-repeat;
+            /* background-size: auto; */
+            background-position: cover;
+            background-attachment: fixed;
+            padding-top: 2vw;
+
+        }
+        #head1{
+            display:flex ;
+            justify-content: space-between;
+        }
+        .logo{
+            margin-left: 5vw;
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            width: 4vw;
+            border-radius: 100px;
+
+        }
+        .tollid{
+            color: whitesmoke;
+            padding: 0vw 5vw;
+            list-style: none;
+            font-size: 1.3vw;
+        }
+
+        
+        #head2{
+            overflow: hidden;
+            padding: 2vw;
+        }
+
+
+        .menu-items{
+            margin: .2vw;
+        }
+
+
+        #menu-id{
+            color: whitesmoke;
+            font-size: 2vw;
+            margin: 1vw;
+            padding: 0px 5px;
+            border-radius: 60px;
+            text-decoration: none;
+        }
+
+        #menu-id:hover{
+            background-color: #c3beba;
+            color: rgb(11, 11, 11);
+            border-radius: 60px;
+        }
+
+        #head3{
+            justify-content: space-between;
+            display: flex;
+            padding-top: 5vw;
+            align-items: center;
+            /* padding-top: 10px; */
+            overflow: hidden;
+        }
+
+        .dotted-border{
+            border: 2px brown dashed;
+            text-align: center;
+            justify-content: center;
+            color: whitesmoke;
+            font-size: 2vw;
+            width: 20vw;
+            margin-left: 13vw;
+            /* margin-top: 2vw; */
+            margin-bottom: 5vw;
+        }
+        
+        #heading{
+            border: 2px rgb(126, 106, 5) solid ;
+            box-shadow: 1.5vw 1.5vw 15px rgb(13, 0, 0);
+            border-radius: 1px ;
+            
+            color: whitesmoke;
+            font-size: 6vw;
+            text-align: center;
+            margin: 5vw 8vw;
+            /* margin: 40px; */
+            width: 35vw;
+            margin-bottom: 5vw;
+        }
+
+        .banner{
+            margin-right: 12vw;
+            width: 40vw;
+            
+
+        }
+
+        #body1{
+            width: 50vw;
+            width: 80%;
+            margin: auto;
+            margin-top: 15px;
+
+        }
+
+        .img-containeer{
+            display: flex;
+            /* width: 50%; */
+            /* background-color: aqua; */
+            overflow: hidden;
+            margin: auto;
+        }
+
+        
+
+        .pic1 img{
+            margin: auto;
+            overflow: hidden;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 95%;
+        }        
+        .pic2 img{
+            overflow: hidden;
+            margin: auto;
+            width: 95%;
+            margin-top: .5%;
+            padding: .1vw .9vw;   
+        }
+
+        .pic1 img:hover{
+            opacity: .7;
+            width: 39vw;
+        }
+
+        .pic2 img:hover{
+            width: 41vw;
+            opacity: .7;
+        }
+
+        .tasty{
+            margin: 1.5vw;
+        }
+
+        #tasty-text{
+            background-color: yellow;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30vw;
+            padding: 1vw;
+            font-size: 2vw;
+            border: .5px black solid;
+        }
+
+
+        #enjoy-text{
+            text-align: center;
+            /* background-color: #ce834e; */
+            font-size: 5vw;
+
+        }
+
+        #enjoy-text1{
+            text-align: center;
+            color: #3d2514;
+            font-size: 1.1vw;
+            width: 80%;
+            margin: auto;
+            padding: 2vw;
+        }
+
+        #ordernow{
+            display: flex;
+        }
+        .order1{
+            margin: auto;
+            
+        }
+        .order1 img{
+            width: 25vw;
+        }
+
+        .orderbtn{
+            background-color: rgb(199, 4, 4);
+            font-size: 2vw;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* border-radius: 3px; */
+            text-align: center;
+            padding: .6vw;
+            margin-left: 7vw;
+            margin-right: 7vw;
+        }
+
+        .orderdetails{
+            font-size: 1vw;
+            text-align: center;
+            padding: .8vw;
+        }
+
+        #discover{
+            display: flex;
+            margin: 2vw auto;
+            width: 80vw;
+            box-shadow: 2vw 2vw 30px rgb(167, 163, 163);
+        }
+
+        
+
+        .discover-text{
+            margin:  auto;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 2vw;
+            margin: auto;
+            padding: .1vw 1vw;
+        }
+
+        h1{
+            text-align: center;
+            margin: auto;
+            padding: .3vw .2vw;
+            font-size: 4vw;
+        }
+
+
+        .discover-pic img{
+            margin: 2vw;
+            width: 30vw;
+            transition: width 3s, height 2.5s;
+
+        }
+        .discover-pic img:hover{
+            width: 40vw;
+        }
+
+        #form{
+            margin: 4vw 0vw;
+        }
+
+        .heading{
+            display: flex;
+        }
+        .heading img{
+            width: 10vw;
+        }
+        .form1 {
+            text-align: center;
+            margin: 1vw auto;
+            width: 40vw;
+            font-size: 3vw;
+        }
+
+        .fill{
+            width: 60vw;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 2vw 2vw 30px rgb(167, 163, 163);
+
+        }
+        #input-btn::placeholder{
+            font-size: 80%;
+        }
+        #input-btn{
+            margin: 1vw 3vw;
+            width: 40vw;
+            padding: .5vw;
+        }
+
+        #input-btn2{
+            margin: 1vw 3vw;
+            width: 10vw;
+            padding: .5vw;
+            font-size: 1.2vw;
+            background-color: red;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        #foot{
+            background-image: url(footerback.png);
+            background-repeat: no-repeat;
+            background-position: 100%;
+            background-attachment: scroll;
+            margin: auto;
+            margin-bottom: 3vw;
+            padding: 2vw;
+            width: 75vw;
+        }
+
+        #foot img{
+            width: 6vw;
+            border-radius: 50px;
+            margin: 1vw;
+        }
+
+        .footer-logo{
+            display: flex;
+            width: 40vw;
+            align-items: center;
+        }
+
+        #footer-heading{
+            color: whitesmoke;
+            font-size: 3vw;
+        }
+
+        .foot-para{
+            color: whitesmoke;
+            margin: 2vw 1vw;
+            width: 40vw;
+            font-size: 1vw;
+        }
+
+        .copyright{
+            color: whitesmoke;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 1vw;
+            display: flex;
+            margin: auto;
+            width: 50vw;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            font-size: 2.1vw;
+            padding: .7vw 1vw;
+            margin: 1vw;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+            font-size: 2.1vw;
+            margin: 1vw;
+            padding: .7vw;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+            font-size: 2.1vw;
+            margin: 1vw;
+            padding: .7vw;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .social{
+            margin: 0vw 10vw;
+        }
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <section id="head1">
+            <div class="logo">
+                <img src="logo1.png" alt="">
+                <li class="tollid">Toll free - +91 6200947002</li>
+
+            </div>
+        </section>
+
+        <section id="head2">
+            <div class="menu-items">
+                <a id="menu-id" class="onn" href="#">HOME</a>
+                <a id="menu-id" href="#">MENU</a>
+                <a id="menu-id" href="#">OUR STORY</a>
+                <a id="menu-id" href="#">CONTACT US</a>
+            </div>
+        </section>
+
+        <section id="head3">
+            <div class="text">
+                <div class="dotted-border">
+                <h5>
+                    ULITMATE OFFERS
+                </h5>
+                </div>
+                <p id="heading">BURGER <br> Week
+                </p>
+            </div>
+            <div >
+                <img class="banner" src="banner.png" alt="">
+            </div>
+        </section>
+
+        <!-- header complete -->
+
+
+        
+    </div>
+
+        <!-- body suru -->
+
+
+
+    <section id="body1">
+
+        <div class="img-containeer">
+        <div class="pic1">
+            <a href="">
+                <img src="sec2-pic1.png" alt="">
+            </a>
+        </div>
+
+        <div class="pic2">
+            <div>
+                <a href="#">
+                    <img class="photo1" src="sec2-pic2.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="sec2-pic3.png" alt="">
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="tasty">
+        <p id="tasty-text">
+            ALWAYS TASTY BURGER HERE
+        </p>
+    </div>
+
+    <div class="enjoy">
+        <p id="enjoy-text">CHOOSE &nbsp; & &nbsp; ENJOY</p>
+        <p id="enjoy-text1">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit illum quae, amet atque facere neque temporibus ipsum quaerat earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, optio?</p>
+    </div>
+
+
+    <section id="ordernow">
+
+        <div class="order1">
+            <img src="sec3-pic1.png" alt="">
+            <div class="orderdetails">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="orderbtn">ORDER</div>
+
+        </div>
+        <div class="order1">
+            <img src="sec3-pic1.png" alt="">
+            <div class="orderdetails">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="orderbtn">ORDER</div>
+
+        </div>
+        <div class="order1">
+            <img src="sec3-pic1.png" alt="">
+            <div class="orderdetails">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="orderbtn">ORDER</div>
+
+        </div>
+    </section>
+
+    <section id="discover">
+        <div class="discover-text">
+            <h2>Discover</h2>
+            <h1>UPCOMING EVENTS</h1>
+        </div>
+
+        <div class="discover-pic">
+            <img src="sec4-pic.png" alt="">
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="heading">
+            <img src="sec5-pic1.png" alt="">
+            <div class="form1">
+            <p id="form-head">RESERVATION</p>
+            <h3>BOOK YOUR TABLE</h3>
+            </div>
+        </div>
+
+        <div class="fill">
+            <input type="text" name="" id="input-btn" placeholder="NAME">
+            <input type="email" name="" id="input-btn" placeholder="EMAIL">
+            <input type="date" name="" id="input-btn">
+            <input type="time" name="" id="input-btn" placeholder="TIME">
+            <input type="number" name="" id="input-btn" placeholder="PEOPLES">
+            <input type="submit" id="input-btn2" value="Find A Table">
+        </div>
+    </section>
+
+
+    <section id="foot">
+        <div class="footer-logo">
+             <img src="logo1.png" alt="">
+             <p id="footer-heading">BURGER KING</p>
+        </div>
+
+        <div class="foot-para">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore error cumque quasi accusamus, nam nobis non a delectus esse nesciunt.
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam perspiciatis reiciendis, quaerat doloribus fugit. Ab aliquam dolorum magni! Quisquam?</p>
+        </div>
+
+        <div class="copyright">
+            <p id="social">
+                &copy; ALL RIGHTS RESERVED
+            </p>
+
+            <div class="social">
+            </p >
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+            <p>
+            </div>
+        </div>
+
+        
+
+    </section>
+</body>
+</html>
